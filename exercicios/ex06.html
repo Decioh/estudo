@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPDF</title>
+    <style>
+        header{
+            background-color: #2d5e13fa;
+            text-align: center;
+            width: 100%;
+            height: 170px;
+            padding: 10px;
+            margin: -8px;
+            
+        }
+        .menu{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #2D5E13;
+        }
+        .menu ul{
+            list-style: none;
+            position: relative;
+        }
+        .menu ul li{
+            width: 150px;
+            float: left;
+        }
+        .menu a{
+            padding: 10px;
+            display: block;
+            height: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        .menu a:hover{
+            color: #51ad20;
+            background-color: transparent;
+            transition: all .4s;
+        }
+        .menu ul ul{
+            position: absolute;
+            visibility: hidden;
+        }
+        .menu ul li:hover ul{
+            visibility: visible;
+            background-color: #444444;
+        }
+        .menu ul ul li{
+            float: none;
+            border-bottom: solid 1px white;
+        }
+        
+        footer{
+            background-color: #000000;
+            color: rgb(59, 59, 59);
+            text-align: center;
+            padding: 3px;
+        }
+        footer > p{
+            font-size: 10px;
+            margin: 0px;
+        }
+        body{
+            font-family: Helvetica, sans-serif;
+        }
+        section > h1{
+            background-color: #2D5E13;
+            border-radius: 5px;
+            color: aliceblue;
+            padding: 4px;
+        }
+        main{
+            margin-bottom: 10px;
+        }
+        label[for="bt_menu"]{
+            padding: 5px;
+            background-color: #2D5E13;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+        }
+        #bt_menu{
+            display:none;
+        }
+        label[for="bt_menu"]{
+            display: none;
+        }
+        @media (max-width: 900px){
+
+            label[for="bt_menu"]{
+                display: block;
+            }
+            #bt_menu:checked ~.menu{
+                margin-left: 0;
+            }
+            .menu{
+                margin-top: 5px ;
+                margin-left: -2000px;
+                transition: all .4s;
+            }
+            .menu ul li{
+                width: 100%;
+                float: none;
+            }
+            .menu ul ul{
+                position: static;
+                overflow: hidden;
+                max-height: 0;
+                transition: all .4s;
+            }
+            .menu ul li:hover ul{
+                height: auto;
+                max-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    <input type="checkbox" name="" id="bt_menu">
+    <label for="bt_menu">&#9776</label>
+        <a href="http://www.defensoria.df.gov.br/"><img src="imagens/DP_DF-Manual-de-Identidade-Visual.png" alt="DPDF" width="360" height="95"></a>
+        <nav class="menu"> 
+            <ul>
+                <li><a href="#">Institucional</a>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Boletins de serviço</a></li>
+                        <li><a href="#">Legislação</a></li>
+                        <li><a href="#">Planejamento estratégico 2020-2023</a></li>
+                        <li><a href="#">Concursos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contatos</a>
+                <ul>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">coisa</a></li>
+                    <li><a href="#">terceio</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Serviços</a>
+                <ul>
+                    <li><a href="#">olá</a></li>
+                    <li><a href="#">Décio</a></li>
+                    <li><a href="#">Carretta</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Para os Servidores e Defensores</a>
+                <ul>
+                    <li><a href="#">para</a></li>
+                    <li><a href="#">Servidores</a></li>
+                    <li><a href="#">teste</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Para os Estagiários e Voluntários</a>
+                <ul>
+                    <li><a href="#">Defensores</a></li>
+                    <li><a href="#">Estagiario</a></li>
+                    <li><a href="#">Sorte</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Transparência</a>
+                <ul>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                </ul>
+                </li>
+            </ul>
+            <!--
+            <a href="#">Institucional</a>
+            <a href="#">Contatos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Para os Servidores e Defensores</a>
+            <a href="#">Para os Estagiários e Voluntários</a>
+            <a href="#">Transparência</a>-->
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Assuntos do dia:</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem minima earum doloremque cumque quisquam eius deleniti provident similique ut optio porro, doloribus voluptate modi vel, maiores maxime id, fugiat ex?</p>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nulla non ratione perferendis vel sed ad itaque quos placeat animi quae quia accusamus incidunt nostrum, asperiores eaque consectetur amet unde.</p>
+                <aside>Escrito por Lorem, Ipsum</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Décio</p>
+    </footer>
+</body>
+</html>
