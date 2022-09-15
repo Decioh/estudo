@@ -74,11 +74,12 @@ header > p{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
     text-align: center;
 }
-nav{
+/*nav{
     background-color: var(--cor5);
-    padding: 0px;
-}
-nav a{
+    padding: 5px;
+}*/
+header nav a{
+    text-align: left;
     padding: 4px;
     text-decoration: none;
 }
