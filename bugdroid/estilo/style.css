@@ -76,7 +76,7 @@ header > p{
 }
 nav{
     background-color: var(--cor5);
-    padding: 5px;
+    padding: 0px;
 }
 nav a{
     padding: 4px;
