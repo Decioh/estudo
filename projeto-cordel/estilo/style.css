@@ -40,6 +40,7 @@ div#img02{
     font-family: 'Sriracha', cursive;
     margin: 15px;
     padding: 25px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.61);
 }
 .f_white{
     font-family: 'Sriracha', cursive;
