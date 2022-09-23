@@ -30,10 +30,10 @@ section{
     margin: auto;
 }
 div#img01{
-    background: black url(../imagens/background001.jpg) right center / cover no-repeat fixed;
+    background: black url(../imagens/background001.jpg) center center / cover no-repeat fixed;
 }
 div#img02{
-    background: black url(../imagens/background002.jpg) center center / cover no-repeat fixed;
+    background: black url(../imagens/background002.jpg) right center / cover no-repeat fixed;
 }
 .f_img{
     color: white;
